@@ -11,13 +11,13 @@ spec:
   selector:
     matchLabel:
       app: nginx
-    template:
-      metadata:
-        labels:
-          app: nginx
-      spec:
-        containers:
-          - name: nginx
-            image: cornul11/nginx:v0.1.0
-            ports:
-              - containerPort: 80
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: cornul11/nginx:v0.1.0
+        ports:
+          - containerPort: 80
